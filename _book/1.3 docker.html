@@ -1,0 +1,480 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>docker學習 · gitbook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="dorischang">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1.4 SmartContract.html" />
+    
+    
+    <link rel="prev" href="1.2 Nodejs.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"azu","repo":"JavaScript-Plugin-Architecture","type":"star","size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    MyBook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="1.1 gitbook.html">
+            
+                <a href="1.1 gitbook.html">
+            
+                    
+                    GitBook學習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="1.2 Nodejs.html">
+            
+                <a href="1.2 Nodejs.html">
+            
+                    
+                    NodeJs學習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.3" data-path="1.3 docker.html">
+            
+                <a href="1.3 docker.html">
+            
+                    
+                    docker學習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="1.4 SmartContract.html">
+            
+                <a href="1.4 SmartContract.html">
+            
+                    
+                    智能合約
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="kylepic.html">
+            
+                <a href="kylepic.html">
+            
+                    
+                    東東
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <a target="_blank" href="http://www.peekaboomoments.com/zh-TW/home/536991624#_=_">
+            
+                    
+                    時光小屋
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >docker學習</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="docker&#x7B46;&#x8A18;">docker&#x7B46;&#x8A18;</h1>
+<p>docker &#x5F88;&#x706B;&#x7D05;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x53EF;&#x4EE5;&#x628A;&#x8907;&#x96DC;&#x7684;&#x4E8B;&#x60C5;&#x8B8A;&#x7C21;&#x55AE;
+docker Hub&#x5C31;&#x50CF;&#x662F;&#x4E00;&#x500B;&#x96F2;&#x7AEF;&#x7A7A;&#x9593;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x7A0B;&#x5F0F;image&#x5B58;&#x653E;&#x9032;&#x53BB;
+&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x4F5C;&#x696D;&#x7CFB;&#x7D71;&#x4E0A;&#x9762;&#x4E0B;&#x8F09;&#x7A0B;&#x5F0F;&#x4F86;&#x4F7F;&#x7528;
+docker &#x5728;&#x4E0D;&#x540C;&#x7684;os&#x5C64;&#x4E0A;&#x865B;&#x64EC;&#x5316;&#xFF0C;
+&#x53EF;&#x4EE5;&#x5B89;&#x88DD;docker platform
+&#x53EF;&#x4EE5;&#x57F7;&#x884C;&#x4E0D;&#x540C;&#x7684;&#x7A0B;&#x5F0F;
+&#x9019;&#x4E9B;&#x7A0B;&#x5F0F;&#x90FD;&#x6703;&#x5728;container&#x4E2D;&#x57F7;&#x884C;
+docker hub &#x96F2;&#x7AEF;&#x7A7A;&#x9593;&#x6293;&#x53D6;image
+<br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br>
+&#x5F88;&#x591A;&#x4E8B;&#x60C5;&#x5728;windows&#x5E95;&#x4E0B;&#x5F88;&#x9EBB;&#x7169;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x90FD;&#x6703;&#x56E0;&#x70BA;docker&#x8B8A;&#x7684;&#x7C21;&#x55AE;
+docker windows download
+<img src="https://docs.docker.com/docker-for-windows/install/" alt="docker&#x4E0B;&#x8F09;">
+&#x8981;&#x5148;&#x8A3B;&#x518A;&#x4E26;&#x767B;&#x5165;&#x2192;get docker &#x9032;&#x884C;&#x4E0B;&#x8F09;&#x5B89;&#x88DD;&#xFF0C;&#x5B89;&#x88DD;&#x5B8C;&#x6210;&#x91CD;&#x555F;&#x96FB;&#x8166;</p>
+<p>&#x5728;google&#x7DB2;&#x9801;&#x4E2D;&#x641C;&#x5C0B; docker hello world web app</p>
+<pre><code>$ docker run -d --name web-test -p 80:8000 crccheck/hello-world
+</code></pre><p>&#x8CBC;&#x5165;cmd&#x88E1;
+&#x4E26;&#x5230;localhost&#x67E5;&#x770B;docker&#x662F;&#x5426;&#x5EFA;&#x8A2D;&#x6210;&#x529F;</p>
+<pre><code>docker ps
+</code></pre><p>&#x53EF;&#x770B;&#x5230;&#x6B63;&#x5728;&#x904B;&#x884C;&#x7684;docker container</p>
+<pre><code>docker stop web-test
+</code></pre><p>&#x95DC;&#x9589;&#x6307;&#x4EE4;
+<br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br>
+&#x5C0E;&#x5165;docker &#x865B;&#x64EC;&#x5316;&#x5BB9;&#x5668;&#x597D;&#x8655;
+&#x53EF;&#x4EE5;&#x7C21;&#x5316;&#x79FB;&#x4EA4;&#x4F5C;&#x696D;&#x6D41;&#x7A0B;&#x3001;&#x514D;&#x9664;&#x91CD;&#x5EFA;&#x57FA;&#x790E;&#x5EFA;&#x8A2D;&#x5DE5;&#x7A0B;&#x3001;&#x6E1B;&#x5C11;&#x8A08;&#x5283;&#x5916;&#x5DE5;&#x4F5C;&#x3001;&#x4F9D;&#x7167;&#x4E0D;&#x540C;&#x7684;&#x7248;&#x672C;&#x505A;&#x7A0B;&#x5F0F;&#x5207;&#x63DB;&#xFF0C;&#x4E26;&#x89E3;&#x6C7A;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x4E4B;&#x9593;&#x7684;&#x885D;&#x7A81;&#xFF0C;&#x66F4;&#x53EF;&#x4EE5;&#x8B93;&#x958B;&#x767C;&#x3001;&#x6E2C;&#x8A66;&#x3001;&#x548C;&#x6B63;&#x5F0F;&#x74B0;&#x5883;&#x7121;&#x7E2B;&#x63A5;&#x8ECC;&#x3002;
+ex&#xFF1A;&#x6709;&#x4E00;&#x500B;&#x65B0;&#x4EBA;&#x52A0;&#x5165;&#x65B0;&#x7684;&#x5718;&#x968A;&#xFF0C;&#x8981;&#x91CD;&#x65B0;&#x5B89;&#x88DD;&#x4E00;&#x4E9B;&#x7A0B;&#x5F0F;&#xFF0C;&#x9019;&#x4E9B;&#x6771;&#x897F;&#x5982;&#x679C;&#x6709;&#x4F7F;&#x7528;docker pull&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4E0A;&#x50B3;&#x4E0B;&#x8F09;&#x4F7F;&#x7528;</p>
+<p>docker&#x662F;&#x4E00;&#x500B;&#x96C6;&#x6253;&#x5305;&#x3001;&#x904B;&#x9001;&#x548C;&#x4F7F;&#x7528;&#x5BB9;&#x5668;&#x6280;&#x8853;&#x4F86;&#x57F7;&#x884C;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x70BA;&#x4E00;&#x8EAB;&#x7684;&#x958B;&#x653E;&#x6E90;&#x59CB;&#x78BC;&#x5C08;&#x6848;
+<br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br>
+step1&#xFF1A;&#x7528; docker pull &#x53D6;&#x5F97;image&#x6A94;</p>
+<pre><code>$ docker pull dorischang/dorisjs1607
+</code></pre><p><br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br>
+step2&#xFF1A;&#x5217;&#x51FA;&#x672C;&#x6A5F;&#x6620;&#x50CF;&#x6A94;</p>
+<pre><code>$ docker images
+</code></pre><p><br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br>
+step3&#xFF1A;&#x65B0;&#x5EFA;&#x4E26;&#x555F;&#x52D5;&#x5BB9;&#x5668;&#xFF08;run&#xFF09;</p>
+<pre><code>$ docker run -it dorischang/dorisjs1607 bash
+$ docker run -it -d dorischang/dorisjs1607 tail -f/dev/null
+$ docker run -it -v ~/Downloads:/data dorischang/dorisjs1607 bash
+</code></pre><p>&#x5EFA;&#x7ACB;&#x5BB9;&#x5668;&#x4E26;&#x555F;&#x52D5;&#xFF0C;&#x4E26;&#x7D81;&#x5B9A;&#x6A19;&#x6E96;&#x8F38;&#x5165;&#x4E0A;
+&#x4F7F;&#x7528;daemon&#x6A21;&#x5F0F;&#x5EFA;&#x7ACB;&#x5BB9;&#x5668;&#x4E26;&#x555F;&#x52D5;
+&#x5EFA;&#x7ACB;&#x5BB9;&#x5668;&#x4E26;&#x555F;&#x52D5;&#xFF0C;&#x4E14;&#x639B;&#x8F09;&#x672C;&#x6A5F;&#x76EE;&#x9304;&#xFF08;local &#x5728;&#x524D; container &#x5728;&#x5F8C;&#xFF09;
+<br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br>
+step4&#xFF1A;&#x67E5;&#x770B;&#x5BB9;&#x5668;&#x884C;&#x7A0B;&#xFF08;ps&#xFF09;</p>
+<pre><code>$ docker ps
+$ docker ps -a
+</code></pre><p>&#x67E5;&#x770B;&#x5DF2;&#x555F;&#x52D5;&#x7684; containers
+&#x67E5;&#x770B;&#x6240;&#x6709;&#x7684; containers
+<br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br>
+step5&#xFF1A;&#x7D42;&#x6B62;&#x5BB9;&#x5668;&#xFF08;stop&#xFF09;</p>
+<pre><code>$ docker stop 473e79f71ed3
+$ docker ps
+</code></pre><p><br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br>
+step6&#xFF1A;&#x555F;&#x7528;&#x5BB9;&#x5668;&#xFF08;start&#xFF09;</p>
+<pre><code>$ docker start 473e79f71ed3
+$ docker ps
+</code></pre><p><br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br>
+step7&#xFF1A;&#x9032;&#x5165;&#x5BB9;&#x5668;&#xFF08;exec&#xFF09;</p>
+<pre><code>$ docker exec -it 473e79f71ed3 bash
+</code></pre><p><br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br>
+step8&#xFF1A;&#x63D0;&#x4EA4;image&#xFF08;commit&#xFF09;</p>
+<pre><code>$ docker commit 473e79f71ed3 dorisjs1607
+</code></pre><p><br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br>
+step9&#xFF1A;&#x4FEE;&#x6539;&#x6A19;&#x7C64;&#xFF08;tag&#xFF09;</p>
+<pre><code>$ docker commit 473e79f71ed3 dorisjs1607
+$ docker images
+$ docker tag 5a2fd1972302 dorisjs1607:1.0
+$ docker tag dorisjs1607 dorisjs1607:1.1
+
+$ docker tag dorisjs1607:latest dorisjs1607:1.2
+$ docker images
+</code></pre><p>&#x5217;&#x51FA;&#x73FE;&#x6709;&#x7684; image<br>&#x900F;&#x904E; image id &#x4FEE;&#x6539; tag
+&#x900F;&#x904E; repository &#x540D;&#x7A31;&#x4FEE;&#x6539; tag
+<br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br>
+step10&#xFF1A;&#x79FB;&#x9664; image &#x548C; tag&#xFF08;rmi&#xFF09;</p>
+<pre><code>$ docker images
+$ docker rmi 473e79f71ed3
+
+$ docker images dorisjs1607:1.2
+$ docker image
+
+$ docker run hello-world
+$ docker rmi -f hello-world
+</code></pre><p>&#x85C9;&#x7531; image id &#x79FB;&#x9664; image
+&#x79FB;&#x9664;tag
+&#x5F37;&#x5236;&#x79FB;&#x9664;&#xFF08;&#x5305;&#x542B;&#x6709;&#x5BB9;&#x5668;&#x6B63;&#x5728;&#x57F7;&#x884C;&#xFF09;
+<br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br>
+step11&#xFF1A;&#x79FB;&#x9664;&#x5BB9;&#x5668;&#xFF08;rm&#xFF09;</p>
+<pre><code>$ docker ps -a
+</code></pre><p>&#x53EA;&#x79FB;&#x9664;&#x5DF2;&#x505C;&#x6B62;&#x7684;&#x5BB9;&#x5668;</p>
+<pre><code>$ docker rm -f 473e79f71ed3
+</code></pre><p>&#x5F37;&#x5236;&#x79FB;&#x9664;
+<br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br>
+step12&#xFF1A;&#x4E0A;&#x50B3;image&#xFF08;push&#xFF09;</p>
+<pre><code>$ docker images
+
+$ docker tag 473e79f71ed3 &lt;USERNAME&gt;/foo
+$ docker tag 473e79f71ed3 &lt;USER_NAME&gt;/foo
+
+$ docker push &lt;USERNAME&gt;foo
+$ docker push &lt;SERVER_NAME&gt;/foo
+</code></pre><p>&#x9700;&#x767B;&#x5165; Docker Registry &#x624D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;
+Docker Hub&#xFF1A;<username>/<repo_name>
+Pirvate Docker Registry&#xFF1A;<username>/<repo_name></repo_name></username></repo_name></username></p>
+<p>&#x4E0A;&#x50B3; image &#x7528;push
+<br></p>
+<p><hr size="3" align="center" noshade="" width="90%" color="    #AAAAAA">
+<br></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.2 Nodejs.html" class="navigation navigation-prev " aria-label="Previous page: NodeJs學習">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1.4 SmartContract.html" class="navigation navigation-next " aria-label="Next page: 智能合約">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"docker學習","level":"1.1.3","depth":2,"next":{"title":"智能合約","level":"1.1.4","depth":2,"path":"1.4 SmartContract.md","ref":"1.4 SmartContract.md","articles":[]},"previous":{"title":"NodeJs學習","level":"1.1.2","depth":2,"path":"1.2 Nodejs.md","ref":"1.2 Nodejs.md","articles":[]},"dir":"ltr"},"config":{"plugins":["donate","edit-link","github-buttons","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://i.imgur.com/qSGCx0s.jpg","alipayText":"cute","button":"圖片","title":"","wechat":"https://i.imgur.com/LMKLwXD.jpg","wechatText":"line"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"azu","repo":"JavaScript-Plugin-Architecture","type":"star","size":"small"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"編輯此頁","base":"https://github.com/darrenliuwei/gitbook/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"dorischang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"gitbook","language":"zh-tw","gitbook":"*","description":"gitbook"},"file":{"path":"1.3 docker.md","mtime":"2019-01-17T11:03:48.753Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-17T14:37:44.077Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
